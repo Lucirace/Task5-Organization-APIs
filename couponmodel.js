@@ -42,7 +42,7 @@ const CouponSchema = new Schema({
   plans: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Mind_Plan",
+      //  ref: "Mind_Plan",
       required: true,
     },
   ],
@@ -66,18 +66,18 @@ const CouponSchema = new Schema({
   user: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Mind_User",
+      // ref: "Mind_User",
     },
   ],
   created_at: { type: Date, required: true },
   updated_at: { type: Date, required: true },
   created_by: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Mind_User",
+    //ref: "Mind_User",
   },
   updated_by: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Mind_User",
+    // ref: "Mind_User",
   },
 });
 

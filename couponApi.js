@@ -4,7 +4,7 @@ const validateCoupon = require("./couponvalidation");
 const CouponModel = require("./couponmodel");
 
 const app = express();
-
+app.use(express.json());
 // Connect to MongoDB
 mongoose
   .connect("mongodb://localhost:27017/exampledb")
